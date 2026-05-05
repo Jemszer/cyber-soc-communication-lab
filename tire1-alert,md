@@ -1,0 +1,13 @@
+Tier 1 Alert Report
+
+## Title:
+Suspicious Login Activity Detected
+
+## Description:
+Multiple failed login attempts were detected from IP address 192.168.1.100 targeting different accounts (root, admin, user). A successful login to the admin account was later observed.
+
+## Initial Assessment:
+This activity indicates a possible brute-force attack. The attacker may have guessed the correct credentials after several attempts.
+
+## Severity:
+Medium
