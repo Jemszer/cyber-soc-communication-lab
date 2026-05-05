@@ -1,13 +1,12 @@
-Tier 1 Alert Report
+Title: Unauthorized Access and Privilege Escalation Detected
 
-## Title:
-Suspicious Login Activity Detected
+Description:
+Multiple failed login attempts were detected from IP address 192.168.1.100, targeting several user accounts (root, admin, user). A successful login to the admin account was later observed from the same IP address. After gaining access, the attacker escalated privileges from admin to root.
 
-## Description:
-Multiple failed login attempts were detected from IP address 192.168.1.100 targeting different accounts (root, admin, user). A successful login to the admin account was later observed.
+Additionally, another suspicious IP address 10.0.0.45 showed repeated failed login attempts. A user also reported entering their credentials on a phishing email sent from support@secure-login.com, indicating a possible credential compromise.
 
-## Initial Assessment:
-This activity indicates a possible brute-force attack. The attacker may have guessed the correct credentials after several attempts.
+Initial Assessment:
+The incident appears to be a multi-stage attack, starting with phishing to steal user credentials, followed by brute-force login attempts, unauthorized access, and privilege escalation. This indicates that the attacker successfully gained control of an administrative account and escalated privileges to root level.
 
-## Severity:
-Medium
+Severity:
+High
